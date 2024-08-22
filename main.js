@@ -1,15 +1,7 @@
-const promo = "50%";
+const x = 0;
 
-switch (promo) {
-  case "10%":
-    console.log("Dziś jest 10% zniżki");
-    break;
-  case "20%":
-    console.log("Dziś jest 20% zniżki");
-    break;
-  case "30%":
-    console.log("Dziś jest 30% zniżki");
-    break;
-  default:
-    console.log(`Dziś jest ${promo} zniżki`);
+if (x % 2 === 0) {
+  console.log(`${x} jest parzysty`);
+} else {
+  console.log(`${x} jest nie parzysty`);
 }
