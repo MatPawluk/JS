@@ -1,7 +1,5 @@
-const x = 0;
+const colors = ["blue", "red", "green", "yelow"];
 
-if (x % 2 === 0) {
-  console.log(`${x} jest parzysty`);
-} else {
-  console.log(`${x} jest nie parzysty`);
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
 }
