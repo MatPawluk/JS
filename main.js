@@ -1,10 +1,15 @@
-const x = 100;
-const y = 50;
+const promo = "50%";
 
-if (x > y) {
-  console.log("x > y");
-} else if (x === y) {
-  console.log("x = y");
-} else if (x < y) {
-  console.log("x < y");
+switch (promo) {
+  case "10%":
+    console.log("Dziś jest 10% zniżki");
+    break;
+  case "20%":
+    console.log("Dziś jest 20% zniżki");
+    break;
+  case "30%":
+    console.log("Dziś jest 30% zniżki");
+    break;
+  default:
+    console.log(`Dziś jest ${promo} zniżki`);
 }
