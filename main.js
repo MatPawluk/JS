@@ -1,9 +1,6 @@
-const password = "hdjfhsd";
+const x = 50;
+const y = 30;
 
-if (password.length > 10 && password.includes("!")) {
-  console.log("Masz super hasło");
-} else if (password.length > 10) {
-  console.log("masz dobre hasło");
-} else {
-  console.log("masz za słabe hasło");
+if (x > y) {
+  console.log(`${x} > ${y}`);
 }
