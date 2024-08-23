@@ -1,5 +1,7 @@
-const colors = ["blue", "red", "green", "yelow"];
+let x = 20;
 
-for (let i = 0; i < colors.length; i++) {
-  console.log(colors[i]);
-}
+do {
+  x -= 3;
+} while (x > 0);
+
+console.log(x);
