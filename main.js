@@ -1,7 +1,6 @@
-let x = 20;
+const numbers = [];
 
-do {
-  x -= 3;
-} while (x > 0);
-
-console.log(x);
+numbers.push(2, 9, 21, 32);
+console.log(numbers);
+numbers.pop();
+console.log(numbers);
