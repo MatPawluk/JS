@@ -1,8 +1,16 @@
-const numbers = [1, 2, 3];
-const food = ["burger", "schabowy", "pizza"];
+const numbers = [1, 5, 12, 26, 48];
 
-const newArry2 = numbers.concat(food);
-console.log(newArry2);
+function multiply(x) {
+  return x * 5;
+}
 
-const newArry = [...numbers, ...food];
-console.log(newArry);
+const newNumbers = numbers.map(multiply);
+console.log(newNumbers);
+
+for (const number of newNumbers) {
+  if (number % 2 === 0) {
+    console.log(`liczba jest parzysta: ${number}`);
+  } else {
+    console.log(`liczba jest nieparzysta: ${number}`);
+  }
+}
