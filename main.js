@@ -1,6 +1,8 @@
-const letters = ["c", "d"];
-letters.unshift("a", "b");
-letters.push("e", "f");
-console.log(letters);
+const numbers = [1, 2, 3];
+const food = ["burger", "schabowy", "pizza"];
 
-console.log(letters.includes("c"));
+const newArry2 = numbers.concat(food);
+console.log(newArry2);
+
+const newArry = [...numbers, ...food];
+console.log(newArry);
