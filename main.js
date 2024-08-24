@@ -1,6 +1,17 @@
-const numbers = [];
+const numbers = [0, 0, 1, 1, 2, 2, 2];
+const colors = ["red", "green", "blue", true, 123];
+const cars = [123, true, "audi", "bmw", "mercedes", "ferrari", "🤷‍♂️", "👀"];
 
-numbers.push(2, 9, 21, 32);
-console.log(numbers);
-numbers.pop();
-console.log(numbers);
+const numbers2 = numbers.slice(0, 2);
+console.log(numbers2);
+
+const numbers3 = numbers.slice(-3);
+console.log(numbers3);
+
+const randomStuff = colors.splice(3);
+console.log(colors);
+console.log(randomStuff);
+
+const newCars = cars.splice(2, 4, "test");
+console.log(cars);
+console.log(newCars);
