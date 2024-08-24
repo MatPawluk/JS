@@ -1,16 +1,11 @@
-const numbers = [1, 5, 12, 26, 48];
+const colors = ["green"];
 
-function multiply(x) {
-  return x * 5;
-}
+colors.unshift("red");
+colors.push("blue");
 
-const newNumbers = numbers.map(multiply);
-console.log(newNumbers);
-
-for (const number of newNumbers) {
-  if (number % 2 === 0) {
-    console.log(`liczba jest parzysta: ${number}`);
-  } else {
-    console.log(`liczba jest nieparzysta: ${number}`);
-  }
+for (let i = 0; i < colors.length; i++) {
+  let color = colors[i];
+  let formattedColor =
+    color.charAt(0).toUpperCase() + color.slice(1).toLowerCase();
+  console.log(`Mój ulubiony kolor to ${formattedColor}`);
 }
