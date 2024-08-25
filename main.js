@@ -1,11 +1,13 @@
-const colors = ["green"];
+const cars = "Audi, Mercedes, BMW, Nissan, Dogdge";
 
-colors.unshift("red");
-colors.push("blue");
+const newCars = cars.split(", ");
+console.log(newCars);
 
-for (let i = 0; i < colors.length; i++) {
-  let color = colors[i];
-  let formattedColor =
-    color.charAt(0).toUpperCase() + color.slice(1).toLowerCase();
-  console.log(`Mój ulubiony kolor to ${formattedColor}`);
+if (newCars.length > 3) {
+  console.log("Jest OK");
+} else {
+  console.log("Nie jest OK");
 }
+
+newCars.includes("Audi") ? newCars.push("Ford") : newCars.pop();
+console.log(newCars);
