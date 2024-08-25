@@ -1,12 +1,10 @@
-let score;
+let celsius;
+let temp;
 
-const add = (x, y) => {
-  score = x + y;
-  if (score % 2 === 0) {
-    console.log(`Liczba ${score} jest parzysta`);
-  } else {
-    console.log(`Liczba ${score} jest nieparzysta`);
-  }
+const fahrenheit = (c) => {
+  celsius = c;
+  temp = c * 1.8 + 32;
+  console.log(`${celsius}°C = ${temp}°F`);
 };
 
-add(5, 2);
+fahrenheit(10);
