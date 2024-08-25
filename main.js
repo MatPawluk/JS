@@ -1,10 +1,16 @@
-let celsius;
-let temp;
+const num = 10;
+const numbers = [];
 
-const fahrenheit = (c) => {
-  celsius = c;
-  temp = c * 1.8 + 32;
-  console.log(`${celsius}°C = ${temp}°F`);
+for (let i = 0; i < num; i++) {
+  numbers.push(i);
+}
+
+const check = (x) => {
+  if (x % 3 === 0 && x !== 0) {
+    console.log(`${x} jest podzielne przez trzy`);
+  } else {
+    console.log(`${x} nie jest podzielne przez trzy lub ${x} = 0`);
+  }
 };
 
-fahrenheit(10);
+numbers.forEach(check);
