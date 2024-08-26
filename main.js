@@ -1,5 +1,6 @@
-const divTest = document.querySelector("div");
+const btn = document.querySelector("button");
+const test = () => {
+  console.log("Hej");
+};
 
-const par = document.createElement("p");
-
-divTest.appendChild(par);
+btn.addEventListener("click", test);
